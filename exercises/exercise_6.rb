@@ -12,7 +12,7 @@ puts "----------"
 # "employees" ("id" bigserial primary key, "store_id" bigint, "first_name" character varying, "last_name" character varying, "hourly_rate" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)
 
 @store1.employees.create(first_name: "Khurram", last_name: "Virani", hourly_rate: 60)
-@store1.employees.create(first_name: "Matt", last_name: "Kelly", hourly_rate: 50)
+@store1.employees.create(first_name: "Matt", last_name: "Kelly", hourly_rate: 30)
 @store1.employees.create(first_name: "Mark", last_name: "Marcus", hourly_rate: 100)
 @store1.employees.create(first_name: "Luke", last_name: "Lucas", hourly_rate: 120)
 
