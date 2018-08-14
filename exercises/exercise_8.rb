@@ -5,15 +5,12 @@ require_relative './exercise_3'
 require_relative './exercise_4'
 require_relative './exercise_5'
 require_relative './exercise_6'
+require_relative './exercise_7'
 
-puts "Exercise 7"
+puts "Exercise 8"
 puts "----------"
 
-# Your code goes here ...
+@store4 = Store.find_by(id: 4)
+@store4.employees.create(first_name: "B. Matthew", last_name: "Kelly", hourly_rate: 90)
 
-# print "Enter a new store name: "
-# new_store = gets.chomp
-# create_new_store = Store.create(name: new_store)
-# create_new_store.errors.messages.each do |err|
-#   puts "Error: #{err}"
-# end
+pp @store4.employees
